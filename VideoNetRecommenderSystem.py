@@ -13,7 +13,7 @@ import sklearn as sc
 
 
 Col_Names= ['LectureID','LecturePaired','Frequency']
-df_Pairs=pd.read_csv('C:\\Users\priya\Documents\Python Scripts\pairs.csv',sep=',',names=Col_Names)
+df_Pairs=pd.read_csv('./whole_dataset/pairs.csv',sep=',',names=Col_Names)
 
 
 # In[43]:
@@ -32,7 +32,7 @@ df_Pairs=df_Pairs.drop(df_Pairs.index[0])
 
 
 Col_Names1= ['LectureID','Type','language','parentId','views','rec_date','pub_date','name']
-df_Lectures=pd.read_csv('C:\\Users\priya\Documents\Python Scripts\lectures_train_New1.csv',sep=',',names=Col_Names1)
+df_Lectures=pd.read_csv('./whole_dataset/lectures_train_New1.csv',sep=',',names=Col_Names1)
 
 
 # In[8]:
@@ -57,13 +57,13 @@ df_Lectures=df_Lectures.drop(df_Lectures.index[0])
 
 
 Col_Names2= ['AuthorID','A_Name','email','homepage','gender','organization']
-df_Authors=pd.read_csv('C:\\Users\\priya\\Documents\\Python Scripts\\authors.csv',sep=',',names=Col_Names2)
+df_Authors=pd.read_csv('./whole_dataset/authors.csv',sep=',',names=Col_Names2)
 Col_Names3= ['CategoryID','C_Name','parentID','wikipediaURL']
-df_Categories=pd.read_csv('C:\\Users\priya\Documents\Python Scripts\categories.csv',sep=',',names=Col_Names3)
+df_Categories=pd.read_csv('./whole_dataset/categories.csv',sep=',',names=Col_Names3)
 Col_Names4= ['CategoryID','LectureID']
-df_Categories_Lectures=pd.read_csv('C:\\Users\priya\Documents\Python Scripts\categories_lectures.csv',sep=',',names=Col_Names4)
+df_Categories_Lectures=pd.read_csv('./whole_dataset/categories_lectures.csv',sep=',',names=Col_Names4)
 Col_Names5= ['AuthorID','LectureID']
-df_Authors_Lectures=pd.read_csv('C:\\Users\\priya\\Documents\\Python Scripts\\authors_lectures.csv',sep=',',names=Col_Names5)
+df_Authors_Lectures=pd.read_csv('./whole_dataset/authors_lectures.csv',sep=',',names=Col_Names5)
 
 
 # In[12]:
